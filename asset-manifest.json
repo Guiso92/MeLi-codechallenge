@@ -3,18 +3,18 @@
     "static/js/0.9f2e07d0.chunk.js": "/meli-codechallenge/static/js/0.9f2e07d0.chunk.js",
     "static/js/0.9f2e07d0.chunk.js.map": "/meli-codechallenge/static/js/0.9f2e07d0.chunk.js.map",
     "main.css": "/meli-codechallenge/static/css/main.151c84e7.chunk.css",
-    "main.js": "/meli-codechallenge/static/js/main.cca0be87.chunk.js",
-    "main.js.map": "/meli-codechallenge/static/js/main.cca0be87.chunk.js.map",
-    "runtime-main.js": "/meli-codechallenge/static/js/runtime-main.e19dc4bd.js",
-    "runtime-main.js.map": "/meli-codechallenge/static/js/runtime-main.e19dc4bd.js.map",
+    "main.js": "/meli-codechallenge/static/js/main.51a4aeb6.chunk.js",
+    "main.js.map": "/meli-codechallenge/static/js/main.51a4aeb6.chunk.js.map",
+    "runtime-main.js": "/meli-codechallenge/static/js/runtime-main.8c52939d.js",
+    "runtime-main.js.map": "/meli-codechallenge/static/js/runtime-main.8c52939d.js.map",
     "static/js/3.a11c56ec.chunk.js": "/meli-codechallenge/static/js/3.a11c56ec.chunk.js",
     "static/js/3.a11c56ec.chunk.js.map": "/meli-codechallenge/static/js/3.a11c56ec.chunk.js.map",
     "static/css/4.329523d0.chunk.css": "/meli-codechallenge/static/css/4.329523d0.chunk.css",
-    "static/js/4.c32c0bb0.chunk.js": "/meli-codechallenge/static/js/4.c32c0bb0.chunk.js",
-    "static/js/4.c32c0bb0.chunk.js.map": "/meli-codechallenge/static/js/4.c32c0bb0.chunk.js.map",
+    "static/js/4.76d4eb36.chunk.js": "/meli-codechallenge/static/js/4.76d4eb36.chunk.js",
+    "static/js/4.76d4eb36.chunk.js.map": "/meli-codechallenge/static/js/4.76d4eb36.chunk.js.map",
     "static/css/5.be7f5c59.chunk.css": "/meli-codechallenge/static/css/5.be7f5c59.chunk.css",
-    "static/js/5.943aeeb1.chunk.js": "/meli-codechallenge/static/js/5.943aeeb1.chunk.js",
-    "static/js/5.943aeeb1.chunk.js.map": "/meli-codechallenge/static/js/5.943aeeb1.chunk.js.map",
+    "static/js/5.7c374efb.chunk.js": "/meli-codechallenge/static/js/5.7c374efb.chunk.js",
+    "static/js/5.7c374efb.chunk.js.map": "/meli-codechallenge/static/js/5.7c374efb.chunk.js.map",
     "static/js/6.f68ae970.chunk.js": "/meli-codechallenge/static/js/6.f68ae970.chunk.js",
     "static/js/6.f68ae970.chunk.js.map": "/meli-codechallenge/static/js/6.f68ae970.chunk.js.map",
     "index.html": "/meli-codechallenge/index.html",
@@ -24,9 +24,9 @@
     "static/js/3.a11c56ec.chunk.js.LICENSE.txt": "/meli-codechallenge/static/js/3.a11c56ec.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e19dc4bd.js",
+    "static/js/runtime-main.8c52939d.js",
     "static/js/3.a11c56ec.chunk.js",
     "static/css/main.151c84e7.chunk.css",
-    "static/js/main.cca0be87.chunk.js"
+    "static/js/main.51a4aeb6.chunk.js"
   ]
 }
