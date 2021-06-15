@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useHistory, useLocation } from "react-router";
+import { Link } from "react-router-dom";
 
 import logo from "../shared/assets/Logo_ML.png";
 import searchIcon from "../shared/assets/ic_Search.png";
@@ -21,15 +22,15 @@ export default function SearchBar() {
 
   useEffect(() => {
     searchInput.current.focus();
-    if (!!search) setSearchText(search);
+    !!search ? setSearchText(search) : setSearchText("");
   }, [search]);
 
   return (
     <div className="search-bar">
       <div className="search-container">
-        <a href="/" className="search-logo">
+        <Link to={"/"} className="search-logo">
           <img src={logo} alt="Logo de MercadoLibre" />
-        </a>
+        </Link>
         <input
           value={searchText}
           type="text"

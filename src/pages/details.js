@@ -1,5 +1,6 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 
 import { Items } from "../shared/services";
 import { LoaderContext } from "../shared/context/loader-context";
@@ -15,7 +16,7 @@ export default function Details() {
     setIsLoading(true);
     try {
       const itemData = await Items.single(id);
-      itemData.price = new Intl.NumberFormat().format(itemData.price)
+      itemData.price = new Intl.NumberFormat().format(itemData.price);
       setData(itemData);
       const itemDesc = await Items.singleDescription(id);
       setDescription(itemDesc);
@@ -30,7 +31,9 @@ export default function Details() {
   }, [fetchData]);
 
   return (
-    <div className={`details ${!isLoading ? 'details-load':'details-loading'}`}>
+    <div
+      className={`details ${!isLoading ? "details-load" : "details-loading"}`}
+    >
       {!isLoading && data && (
         <div className="details-data">
           <div className="details-image-container">
@@ -53,7 +56,7 @@ export default function Details() {
               <span className="details-info-price">${data.price}</span>
             </div>
             <div className="details-info-button-container">
-              <a href={data.permalink} className="details-info-button">
+              <a href={data.permalink} target="blank" className="details-info-button">
                 Comprar
               </a>
             </div>
@@ -62,14 +65,21 @@ export default function Details() {
       )}
       {!isLoading && description && (
         <div className="details-description">
-          <span className="details-description-title">Descripción del producto</span>
-          <p className="details-description-paragraph">{description.plain_text}</p>
+          <span className="details-description-title">
+            Descripción del producto
+          </span>
+          <p className="details-description-paragraph">
+            {description.plain_text}
+          </p>
         </div>
       )}
       {!isLoading && !data && !description && (
         <div className="no-results">
-          <span>NO HAY NADA RESULTADOS DISPONIBLES, POR FAVOR VUELVA A LA PANTALLA ANTERIOR HACIENDO CLICK <a href="/">AQUÍ</a> O
-          INTENTE UNA NUEVA BUSQUEDA EN LA BARRA SUPERIOR.</span>
+          <span>
+            NO HAY NADA RESULTADOS DISPONIBLES, POR FAVOR VUELVA A LA PANTALLA
+            ANTERIOR HACIENDO CLICK <Link href={"/"}>AQUÍ</Link> O INTENTE UNA NUEVA
+            BUSQUEDA EN LA BARRA SUPERIOR.
+          </span>
         </div>
       )}
     </div>
