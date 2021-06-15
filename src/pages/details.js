@@ -21,7 +21,6 @@ export default function Details() {
       setDescription(itemDesc);
       setIsLoading(false);
     } catch (error) {
-      alert(error);
       setIsLoading(false);
     }
   }, [id, setIsLoading]);
@@ -69,8 +68,8 @@ export default function Details() {
       )}
       {!isLoading && !data && !description && (
         <div className="no-results">
-          NO HAY NADA PARA MOSTRAR, POR FAVOR VUELVA A LA PANTALLA ANTERIOR O
-          INTENTE UNA NUEVA BUSQUEDA
+          <span>NO HAY NADA RESULTADOS DISPONIBLES, POR FAVOR VUELVA A LA PANTALLA ANTERIOR HACIENDO CLICK <a href="/">AQUÍ</a> O
+          INTENTE UNA NUEVA BUSQUEDA EN LA BARRA SUPERIOR.</span>
         </div>
       )}
     </div>

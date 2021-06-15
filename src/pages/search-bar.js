@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useHistory, useLocation } from "react-router";
 
 import logo from "../shared/assets/Logo_ML.png";
@@ -7,6 +7,7 @@ import "../styles/search-bar.scss";
 
 export default function SearchBar() {
   const [searchText, setSearchText] = useState("");
+  const searchInput = useRef(null);
   let history = useHistory();
   const search = new URLSearchParams(useLocation().search).get("search");
 
@@ -19,7 +20,8 @@ export default function SearchBar() {
   };
 
   useEffect(() => {
-    if(!!search) setSearchText(search);
+    searchInput.current.focus();
+    if (!!search) setSearchText(search);
   }, [search]);
 
   return (
@@ -34,6 +36,7 @@ export default function SearchBar() {
           placeholder="Nunca dejes de buscar"
           className="search-input"
           name="search-input"
+          ref={searchInput}
           onChange={(e) => setSearchText(e.target.value)}
           onKeyPress={(e) => e.key === "Enter" && handleSearch()}
         />

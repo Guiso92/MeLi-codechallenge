@@ -21,7 +21,6 @@ export default function Home() {
         setItems(items.results);
         setIsLoading(false);
       } catch (error) {
-        alert(error);
         setIsLoading(false);
       }
     },
@@ -44,7 +43,9 @@ export default function Home() {
           {!items.length && (
             <li className="item-no-results">
               <div className="no-results">
-                NO HAY RESULTADOS PARA ESTA BUSQUEDA, PRUEBE CON OTRA PALABRA
+                <span className="no-results-text">
+                  NO HAY RESULTADOS PARA ESTA BUSQUEDA, POR FAVOR PRUEBE CON OTRA PALABRA.
+                </span>
               </div>
             </li>
           )}
