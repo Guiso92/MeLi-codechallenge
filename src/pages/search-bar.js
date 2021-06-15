@@ -19,7 +19,7 @@ export default function SearchBar() {
   };
 
   useEffect(() => {
-    setSearchText(search);
+    if(!!search) setSearchText(search);
   }, [search]);
 
   return (
