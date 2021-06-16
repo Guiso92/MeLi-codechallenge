@@ -11,17 +11,27 @@
   }
   &-data {
     display: flex;
+    flex-direction: column;
+    @media(min-width: $desktopBreakpoint) {
+      flex-direction: row;
+    }
   }
   &-image {
       max-width: 95%;
       &-container {
-        width: 70%;
+        width: 100%;
+        @media(min-width: $desktopBreakpoint) {
+          width: 70%;
+        }
         display: flex;
         justify-content: center;
       }
   }
   &-info-container {
-    width: 30%;
+    width: 100%;
+    @media(min-width: $desktopBreakpoint) {
+      width: 30%;
+    }
   }
   &-info-title {
     font-size: 22px;
@@ -46,7 +56,10 @@
     font-size: 36px;
   }
   &-description {
-    width: 70%;
+    width: 100%;
+    @media(min-width: $desktopBreakpoint) {
+      width: 70%;
+    }
     margin-top: 8%;
     &-title {
       font-size: 26px;

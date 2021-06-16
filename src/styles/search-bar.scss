@@ -13,10 +13,16 @@
   &-container {
     display: flex;
     box-sizing: border-box;
-    margin: $generalMargin
+    margin: 0 2%;
+    @media(min-width: $desktopBreakpoint) {
+      margin: $generalMargin
+    }
   }
-  &-logo {
-    margin-right: 2%;
+  &-logo{
+    width: 100%;
+    &-link {
+      margin-right: 2%;
+    }
   }
   &-input {
     border: none;

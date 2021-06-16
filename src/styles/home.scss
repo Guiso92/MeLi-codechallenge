@@ -5,9 +5,14 @@
   list-style: none;
   border-bottom: thin solid #eee;
   display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   margin: $generalMargin;
   padding: 1rem;
+  align-items: center;
+  @media (min-width: $desktopBreakpoint) {
+    flex-direction: row;
+  }
 }
 
 .home {
@@ -36,7 +41,8 @@
       font-weight: 400;
     }
     &-price {
-      display: block;
+      display: flex;
+      align-items: baseline;
       margin-top: 0.47em;
       font-size: 30px;
     }
@@ -46,16 +52,21 @@
       color: gray;
       font-size: 13px;
       &-container {
-        margin: 0 4rem 0 auto;
+        @media (min-width: $desktopBreakpoint) {
+          margin: 0 4rem 0 auto;
+        }
       }
     }
     &-image {
       border-radius: 5px;
       &-container {
-        margin-right: 1.5em;
+        @media (min-width: $desktopBreakpoint) {
+          margin-right: 1.5em;
+        }
       }
     }
     &-shipping-icon {
+      height: 100%;
       margin-left: 15px;
     }
   }

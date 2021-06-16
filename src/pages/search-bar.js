@@ -28,8 +28,8 @@ export default function SearchBar() {
   return (
     <div className="search-bar">
       <div className="search-container">
-        <Link to={"/"} className="search-logo">
-          <img src={logo} alt="Logo de MercadoLibre" />
+        <Link to={"/"} className="search-logo-link">
+          <img src={logo} alt="Logo de MercadoLibre" className="search-logo" />
         </Link>
         <input
           value={searchText}

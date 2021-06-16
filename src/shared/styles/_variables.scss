@@ -5,6 +5,8 @@ $background: #ededed;
 
 $generalMargin: 0 19%;
 
+$desktopBreakpoint: 800px;
+
 @mixin button($bg-color, $text-color, $hover-color) {
   background-color: $bg-color;
   width: 100%;
